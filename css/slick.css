@@ -1,0 +1,315 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 411px;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.specialist-list .slick-nav--prev {
+    background-image: url(../images/arrow_slider.png);
+    left: -15px;
+}
+.specialist-list .slick-nav--prev, .specialist-list .slick-nav--next {
+    display: block;
+    width: 52px;
+    z-index: 11;
+    cursor: pointer;
+    height: 54px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 116px;
+}
+.specialist-list .slick-nav--next {
+    background-image: url(../images/arrow_slider.png);
+    right: -15px;
+    background-position: -54px 0px;
+}
+.specialist-list-item {
+    height: 267px;
+    border: 2px solid #DEC874;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0 52px;
+    overflow: hidden;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.contractor-tabs-box__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+}
+.contractor-tabs-box {
+    position: relative;
+}
+.portfolio {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 15px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 484px;
+    overflow: hidden;
+}
+img.slick-slide.slick-cloned:hover {
+    cursor: pointer;
+}
+.portfolio-sliders {
+    position: relative;
+    width: 600px;
+}
+.portfolio-slider {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+}
+.contractor-tabs-box__item.active {
+    position: relative;
+    visibility: visible;
+    overflow: auto;
+    height: auto;
+    width: 960px;
+    margin: 0 auto;
+}
+.portfolio-slider-small {
+    padding-top: 10px;
+}
+.portfolio-slider.active {
+    visibility: visible;
+    overflow: auto;
+    height: auto;
+}
+.portfolio-slider-small img {
+    height: 60px;
+    margin: 0 5px;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+.portfolio-albums {
+    overflow-y: scroll;
+    width: 340px;
+    height: 430px;
+}
+.portfolio-album {
+    margin-bottom: 20px;
+}
+.portfolio-album:hover {
+    cursor: pointer;
+}
+.portfolio-album:before, .portfolio-album:after {
+    display: table;
+    content: "";
+}
+.portfolio-album__preview {
+    float: left;
+    margin-right: 20px;
+    width: 116px;
+}
+.portfolio-album:hover {
+    cursor: pointer;
+}
+.portfolio-album__title {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #737373;
+    font-size: .875em;
+}
+.portfolio-album__count {
+    color: #6a6a6a;
+    font-size: .875em;
+    margin-left: 35px;
+}
+.portfolio-album__count span {
+    margin-left: 5px;
+    padding: 2px 10px 0;
+    background: #ffd200;
+    line-height: 1;
+}
+.portfolio-album:after {
+    clear: both;
+}
+.portfolio-album:before, .portfolio-album:after {
+    display: table;
+    content: "";
+}
+.portfolio-album.active .portfolio-album__count span {
+    background: #6FA341;
+    color: #fff;
+}
+.contractor-tabs {
+    width: 960px;
+}
+.portfolio-slider-small .slick-next, .portfolio-slider-small .slick-prev {
+    position: absolute;
+    top: 10px;
+    text-indent: -9999px;
+    border: 0;
+}
+
+.portfolio-slider-small .slick-next {
+    right: 0;
+    background-image: url(../img/sprite.png);
+    background-position: -158px -119px;
+    width: 13px;
+    height: 60px;
+    background-size: 344px,303px;
+    background-repeat: no-repeat;
+}
+.specialist-list .slick-nav--prev {
+    background-position: 0;
+}
+.portfolio-slider-small .slick-next:hover {
+    background-image: url(../img/sprite.png);
+    background-position: -26px -243px;
+    width: 13px;
+    height: 60px;
+    background-size: 344px,303px;
+    background-repeat: no-repeat;
+}
+.specialist-list .slick-nav--next:hover {
+    background-position: -54px;
+}
+.portfolio-slider-small .slick-prev {
+    left: 0;
+    background-image: url(../img/sprite.png);
+    background-position: 0 -243px;
+    width: 13px;
+    height: 60px;
+    background-size: 344px,303px;
+    background-repeat: no-repeat;
+	    z-index: 55;
+}
+.portfolio-slider-small img.slick-center {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.portfolio-slider-small .slick-prev:hover {
+    background-image: url(../img/sprite.png);
+    background-position: -13px -243px;
+    width: 13px;
+    height: 60px;
+    background-size: 344px,303px;
+    background-repeat: no-repeat;
+}
+.portfolio-slider-small .slick-next, .portfolio-slider-small .slick-prev {
+    position: absolute;
+    top: 10px;
+    text-indent: -9999px;
+    border: 0;
+}
